@@ -1,155 +1,54 @@
-//#include "stdafx.h"
-#define _CRT_SECURE_NO_WARNINGS /*FONKSİYONDA(?) SCANF HATASININ ÇÖZÜMÜ! BU TÜR ŞEYLER HER ZAMAN EN ÜSTTE*/
-#include <stdlib.h>
-#include <iostream>
 #include <stdio.h>
-
-
-
-using namespace std;
-
-int toplam, toplam2, carpma, cikarma, sonuc, sonuc2, carpmaIkiSayi;
+#define pi 3.14159f
 
 int main()
 {
-	int x;			//""k'ye katlayacagimiz sayi.
-	int sayi1, sayi2, sayi3, sayi4, sayi5, sayi6, yazilacakSayi;
-	int sifre = 123456, sifreBumu, i, kalanHak = 3;
-	char yaziSayi[50];
+	float x, ySonuc, sayi1, sayi2, aSonuc;
+	int testN1, testN2, sayiTop, ucBas, uc1, uc2, uc3, ucSonuc;
+	//int	j,k,l,zSonuc;															//3 BASAMAKLI FARKLI YÖNTEMIN DEGISKENLERI!
+	float radius /*= 10.0f*/, volume;
+	printf("Hello World. \n");
 
-	//bool a = (6 > 3);					/*Anlık Tanımlama*/
-	//bool b = (5 > 8);						/*KARŞILAŞTIRMA OPERATÖRLERİ KULLANIMI*/
-	//bool c = (9 == 9);
-	//bool d = (71 <= 4);
+	//3 BASAMAKLI SAYININ SAYI DEGERLERINI TOPLAYAN PROGRAM!
+	/*printf("Enter The 3-digit Number:"); 											//scanf_s("%1d%1d%1d", &j,&k,&l);		zSonuc = j + k + l;		printf("Result Is:%d\n", zSonuc); FARKLI YÖNTEM DIGIT BY DIGIT OKUYOR
+	scanf_s("%d", &ucBas);
+	uc1 = ucBas / 100;
+	uc2 = (ucBas % 100) / 10;
+	uc3 = ucBas % 100;
+	ucSonuc = uc1 + uc2 + uc3;
+	printf("Sum of Digit Number >%d\n", ucSonuc);*/
+	//ORTALAMA AL
+	/*printf("Sum Series:");
+	scanf_s("%d", &sayiTop);
+	printf("Sum is:%d\n", (sayiTop*(sayiTop + 1) / 2));*/
+	//TEST
+	/*printf("Test Sayilari:");
+	scanf_s("%d%d", &testN1, &testN2);
+	printf("Sayilar %d", testN1 + testN2);*/																		//TESTLER BURADA YAPILIR!
+	//Kullanicidan 2 sayi alip ortalamasini alan KOD!
+	/*printf("Enter The 1st Avarege Number:");										//TEK SATIRDA SCANF ("%f%f",&sayi1, sayi2);
+	scanf_s("%f", &sayi1);
+	printf("Enter The 2nd Average Number:");
+	scanf_s("%f", &sayi2);
+	aSonuc = (sayi1 + sayi2) / 2;
+	printf("Avarage Of The Numbers:%.3f\n", aSonuc);*/
+	//KÜP
+	/*printf("Yaricapi Giriniz:");
+	scanf_s("%f",&radius);
+	volume = (4.0f / 3.0f)*pi*radius*radius*radius;
+	printf("Volume:%.1f\n", volume);*/
+	//POLINOM!!
+	/*printf("Enter The Number:");
+	scanf_s("%f", &x);
 
-	//cout << "a degeri:" << a << endl;
-	//cout << "b degeri:" << b << endl;
-	//cout << "c degeri:" << c << endl;
-	//cout << "d degeri:" << d << endl;
-	//int a = 10, b = 20;
-	//++a;
-	//b--;
-	//cout << "a degeri:" << a <<endl ;							/*DEĞİŞKEN ARTTIRMA VE AZALTMA.*/
-	//cout << "b degeri:" << b << endl;
-	//	sonuc = a + b;
-	//	sonuc2 = a*b;
-	//cout << "A ve B Toplami:" << sonuc << endl;
-	//cout << "A ve B Carpimi:" << sonuc2 << endl;
-	/*std::*/cout << "Merhaba Dunya.\n";
-
-	//cout << "Katlanacak sayiyi giriniz:";
-	//	cin >> x;
-	//cout << "Sayinin 2 kati:" << x * 2 <<"\n";
-
-	//cout << "1. sayiyi giriniz:";
-	//	cin >> sayi1;
-	//cout << "\n2. sayiyi giriniz: ";
-	//	cin >> sayi2;
-	//toplam = sayi1 + sayi2;													//Değişken atayarak sonucu gösterme işlemi.
-	//cout << "Iki sayinin toplami:" << toplam <<"\n";
-
-	//	 cout<< "1. Sayiyi Giriniz:";
-	//		cin >> sayi3;
-	//	cout << "\n2. Sayiyi Giriniz:";											/*4 SAYI GİRİYORUZ VE TOPLATIP CIKARIYORUZ SONUCU ATAMA YAPARAK EKRANA VERİYORUZ.*/
-	//		cin >> sayi4;
-	//	cout << "\n3. Sayiyi Giriniz:";
-	//		cin >> sayi5;
-	//	cout << "\n4. Sayiyi Giriniz:";
-	//		cin >> sayi6;
-	//
-	//		carpma = sayi3*sayi5;
-	//		cout << "1. ve 3. sayinin carpimi:" << carpma<<"\n";
-	//		toplam2 = sayi4 + sayi6;
-	//		cout << "2. ve 4. sayinin toplami:" << toplam2<<"\n";
-	//		cikarma = carpma - toplam2;
-	//		cout << "Genel toplam:" << cikarma<< endl;		*/		
-
-	///*SAYINI YAZIYA? CEVIRME*/
-	//cout << "Yazilacak Sayi: ";
-	//cin >> yazilacakSayi;
-	//_itoa(yazilacakSayi, yaziSayi, 2);
-	//cout << "Sayinin Yazimi: " << yaziSayi << endl;
-
-	/*Şifre Girip Hoşgeldin Yazan Program FORIF*/
-	//giris:
-	//cout << "Sifreyi Giriniz:";
-	//cin >> sifreBumu;
-	//{
-	//	if (kalanHak==0)
-	//	{
-	//		cout << "Kalan Hakkiniz bitti!\n";
-	//	}
-	//	else
-	//	{
-	//		if (sifreBumu == sifre)
-	//			cout << "Hosgeldiniz!\n";
-	//		else
-	//		{
-	//			cout << "Giris Yapilamadi. " << kalanHak - 1 << " Hakkiniz Kaldi" << endl;
-	//			kalanHak= kalanHak-1;
-	//			goto giris;
-	//		}
-	//	}
-	//}
-
-
-
-	/*FONKSİYONLAR 101*/
-
-
-	//void denemeFonk();
-	//{
-	//	cout << "Merhaba ilk fonksiyon \n" ;
-	//}
-
-	//int karsilastirFonk();
-	//{
-	//	int sayiBmK, sayiBmK2;
-	//	printf("1. Sayiyi giriniz:");
-	//		scanf("%d", &sayiBmK);
-	//	printf("\n2. Sayiyi Giriniz:");
-	//		scanf("%d", &sayiBmK2);
-	//		if (sayiBmK == sayiBmK2 )
-	//			{
-	//				printf("Sayilar Birbirine Esittir.\n");
-	//			}
-	//		else if (sayiBmK > sayiBmK2)
-	//		{
-	//			printf("Sayi1 Sayi2'den Daha Buyuk. %d\n", sayiBmK);
-	//		}
-	//		else
-	//		{
-	//			printf("Sayi2 Sayi1'den Daha Buyuk. %d\n", sayiBmK2);
-	//		}
-	//}
-
-	/*TOPLAMA ÇIKARMA*/
-	//int islem, sayi1, sayi2;
-	//cout << "1.sayiyi giriniz:";
-	//	cin >> sayi1;
-	//cout << "2.sayiyi giriniz:";
-	//	cin >> sayi2;
-	//cout << "Bir islem Seciniz:\n";
-	//cout << "1 Toplama\n";
-	//cout << "2 Cikarma\n";
-	//cout << "3 Carpma\n";
-	//cout << "4 Bolme\n";
-	//	cin >> islem;
-	//	switch (islem)
-	//	{
-	//	case 1: cout << "Sayilarin Toplami:" << sayi1 + sayi2 << endl;
-	//		break;
-	//	case 2: cout << "Sayilarin Cikarimi:" << sayi1 - sayi2 << endl;
-	//		break;
-	//	case 3: cout << "Sayilarin Carpimi:" << sayi1 * sayi2 << endl;
-	//		break;
-	//	case 4: cout << "Sayilarin Bolumu:" << sayi1 / sayi2 << endl;
-	//		break;
-	//	default: cout << "Sadece Sayi Giriniz!\n";
-	//		//break;
-	//	}
-
-
-	system("Pause");
-	return 71;
+	ySonuc = (3 * x*x*x*x*x) + (2 * x*x*x*x) - (5 * x*x*x) - (x*x) + (7 * x) - 6;
+	printf("Polynomial Resault: %f\n", ySonuc);*/
+	//SEKIL!
+	/*printf("         *\n");
+	printf("  *     *\n");
+	printf("   *   *\n");
+	printf("    * *\n");
+	printf("     *\n");*/
+	system("PAUSE");
+	return 0;
 }
