@@ -11,7 +11,43 @@ int main()
 	char ch1 = 'h', ch2;
 	float f, salary = 1.500;
 	double d;
+	int n, n2, n3;																	//KAre Küp Tanimlari
+	int xx = 5, y = 8;
+	int iTest = 40;
+	float fTest = 839.21f;
 	printf("Hello World. \n");
+
+																					//Matematiksel Ekran Yazdirmalari
+
+//float qq, ww;
+//printf("Enter The Numeros:");			//13,5,
+//scanf_s("%f%f", &qq, &ww);
+//printf("Result %f %f\n", qq, ww);
+//
+//int ee, rr;
+//float yy, tt;
+//printf("Enter The Numeros2:");			//1 , -20.3, -4.0e3
+//scanf_s("%d%d%f%f", &ee, &rr, &yy, &tt);
+//printf("Result %d %d %f %f\n", ee, rr, yy, tt);
+//
+//int ii, jj;
+//float ll, mm;									//Hocanin Testi Bu Girilecek Degerler: 3,-20.65,7 Gir!
+//printf("Enter The Numeros3:");
+//scanf_s("%d%d%f%f", &ii, &jj, &ll, &mm);
+//printf("Result %d %d %f %f\n",ii, jj, ll, mm);
+//
+//printf("The Equation=%2d+%-2d=%2d\n", xx, y, xx - y);							//Hesap Test
+//printf("|%d|%5d|%-5d|%5.3d|\n", iTest, iTest, iTest, iTest);					//Int Test			Sag Sol Basamak Sayisi Gibi Yazdirimlar!
+//printf("|%10.3f|%-5.3f|%0.2e|%-10g|\n", fTest, fTest, fTest, fTest);			//Float Test
+//Girilen Tek Sayinin Karesini ve Kübünü yazdirma!
+
+//Sayinin KAre Ve Kübünü Alma
+
+//printf("Enter The Number:");
+//scanf_s("%d", &n);
+//n2 = n*n;
+//n3 = n*n2;
+//printf("n=%d, n squared=%d, n cubed=%d\n", n, n2, n3);
 
 																					//Writing Character' Integer Value
 
